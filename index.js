@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const convertBtn = document.getElementById('convertBtn');
     const inputText = document.getElementById('inputText');
     const statusDiv = document.getElementById('status');
