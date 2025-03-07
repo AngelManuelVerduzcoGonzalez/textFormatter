@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Conversor de Texto a Múltiples Formatos</h1>
+    
     <div>
         <h2>Texto de Entrada</h2>
         <textarea id="inputText" placeholder="Escribe o pega tu texto aquí..."></textarea>
@@ -28,6 +29,10 @@
             <label for="doc">DOC</label>
         </div>
         <div class="format-option">
+            <input type="checkbox" id="odt" value="odt">
+            <label for="odt">ODT</label>
+        </div>
+        <div class="format-option">
             <input type="checkbox" id="html" value="html">
             <label for="html">HTML</label>
         </div>
@@ -44,7 +49,8 @@
     <!-- Librerías externas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/6.2.2/docx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 
     
     <script src="./index.js" defer></script>
