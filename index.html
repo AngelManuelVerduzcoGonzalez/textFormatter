@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Conversor de Texto a Múltiples Formatos</h1>
+    <div>
+        <h2>Texto de Entrada</h2>
+        <textarea id="inputText" placeholder="Escribe o pega tu texto aquí..."></textarea>
+    </div>
+    
+    <div class="format-options">
+        <h2>Selecciona los formatos de salida</h2>
+        <div class="format-option">
+            <input type="checkbox" id="txt" value="txt" checked>
+            <label for="txt">TXT</label>
+        </div>
+        <div class="format-option">
+            <input type="checkbox" id="pdf" value="pdf">
+            <label for="pdf">PDF</label>
+        </div>
+        <div class="format-option">
+            <input type="checkbox" id="doc" value="doc">
+            <label for="doc">DOC</label>
+        </div>
+        <div class="format-option">
+            <input type="checkbox" id="html" value="html">
+            <label for="html">HTML</label>
+        </div>
+        <div class="format-option">
+            <input type="checkbox" id="md" value="md">
+            <label for="md">Markdown</label>
+        </div>
+    </div>
+    
+    <button id="convertBtn">Convertir y Descargar</button>
+    
+    <div id="status"></div>
+
+    <!-- Librerías externas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/6.2.2/docx.min.js"></script>
+
+    
+    <script src="./index.js" defer></script>
+</body>
+</html>
